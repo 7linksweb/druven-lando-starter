@@ -17,9 +17,15 @@ export BR=${BR%.}
 function echo_step() {
   echo " ";
   echo "=======================================================================";
-  echo "==> Running: $1";
+  echo "===> Running: $1";
   echo "=======================================================================";
 }
-# @improve create a echo_msg
+
+# Step message function
+function echo_msg() {
+  echo " ";
+  echo "=> $1";
+}
+
 # @improve create a echo_erro (colored)
 # @improve create a echo_warning (colored)

@@ -1,0 +1,9 @@
+### Default rule: ignore everything in the account root.
+/*
+/.*
+
+### Add what really needs to be tracked.
+!/.git
+!/.gitignore
+!.lando
+!create-druven-project.bash
