@@ -23,8 +23,8 @@ function echo_step() {
 
 # Step message function
 function echo_msg() {
-  echo " ";
   echo "=> $1";
+  echo " ";
 }
 
 # @improve create a echo_erro (colored)
