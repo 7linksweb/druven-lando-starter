@@ -36,7 +36,6 @@ rm -fr ../../create-druven-project.bash || exit;
 
 echo_msg "Done!";
 
-
 # @improve Add php version selection
 # @improve Add mariadb version selection
 # @improve Add phpmyadmin feature (enabled, disabled, none)
