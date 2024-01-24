@@ -13,9 +13,9 @@ sed -i "s/{DRUVEN-LANDO-STARTER}/$project/g" ../../.lando.base.yml || exit;
 
 # Question
 while true; do
-  read -p "Would you like to run the 'lando start' command? [${YESWORD} / ${NOWORD}]? " yn
+  read -p "Would you like to run the 'lando start' command? [${YESWORD} / ${NOWORD}]? (default: Yes) " yn
 
-  # Check if the variable is empty or undefined
+  # Set default Yes when answer is missing
   if [ -z "$yn" ]; then
       yn="Y"
   fi
