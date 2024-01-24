@@ -15,7 +15,13 @@ fi
 
 # Question
 while true; do
-  read -p "Are you sure you want to execute: \"$(basename "$0")\"? [${YESWORD} / ${NOWORD}]? " yn
+  read -p "Are you sure you want to execute: \"$(basename "$0")\"? [${YESWORD}/${NOWORD}]? (default: Yes) " yn
+
+  # Set default Yes when answer is missing
+  if [ -z "$yn" ]; then
+      yn="Y"
+  fi
+
   if [[ "$yn" =~ $YESEXPR ]]; then
     commands_to_execute;
   fi
